@@ -1,25 +1,22 @@
 # Next Actions
 
 ## Next Batch
-Deepen the city response layer:
-- route memory prototype
-- district mood expansion
-- cargo-specific events
-- road closure and inspection events
+Run the first full pickup / handoff / delivery trip in the live blank-place Roblox world, then tune route readability and vehicle feel from that real run.
 
 ## Why It Matters
-This batch makes the city feel reactive so the prototype stops being just a good driving loop and starts becoming a living logistics game.
+The depot, board, contracts, public progression, seatable truck, and forward truck movement are now live in Studio. The next highest-value proof is completing a real route-node loop so district travel, pickup/handoff logic, and return-value pacing can be tuned against the intended final game instead of against isolated systems.
 
 ## Prerequisites
-- Godot project scaffold
-- project brain docs
-- main scene structure
+- `roblox/tools/validate-roblox-scaffold.ps1`
+- `MIGRATION_PLAN.md`
+- `ROBLOX_ARCHITECTURE.md`
+- `docs/FINAL_GAME_TARGET.md`
 
 ## Success Criteria
-- Repeated routes start to matter
-- Districts visibly react to deliveries and failures
-- At least one event type changes the route decision
-- A shift still ends in a readable summary
+- one complete contract run reaches live route nodes and at least one real pickup / handoff / delivery interaction
+- the baseline company truck can be entered, moved, exited, and reset cleanly in live Studio
+- route signage and objective readability are good enough that a new player can understand where to go next
+- social visibility remains intact while the truck becomes playable
 
 ## Immediately After
-Move into the first event pass and then expand the starter district set.
+Move into vehicle feel tuning, route-node polish, and then persistence/company progression depending on what the first complete live contract run reveals.

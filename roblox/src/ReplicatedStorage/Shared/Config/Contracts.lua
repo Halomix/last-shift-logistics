@@ -1,0 +1,83 @@
+local Contracts = {
+	{
+		Id = "orientation",
+		DisplayName = "Orientation Run",
+		ClientId = "NorthlineDispatch",
+		CargoId = "DryGoodsBulk",
+		DistrictId = "MarketNine",
+		RouteId = "SafeLane",
+		Reward = 120,
+		TargetTime = 34,
+		OnTimeBonus = 16,
+		LatePenalty = 8,
+		UnlockAfterShifts = 0,
+		FinalNodeId = "MarketNine_Delivery",
+		Availability = { Capacity = 1, FutureCapacity = 3, SharedReady = true }
+	},
+	{
+		Id = "floodline",
+		DisplayName = "Floodline Relief",
+		ClientId = "MunicipalResponse",
+		CargoId = "MedpackStack",
+		DistrictId = "Floodline",
+		RouteId = "StormLane",
+		Reward = 180,
+		TargetTime = 30,
+		OnTimeBonus = 24,
+		LatePenalty = 12,
+		UnlockAfterShifts = 0,
+		FinalNodeId = "Floodline_Delivery",
+		Availability = { Capacity = 1, FutureCapacity = 2, SharedReady = true }
+	},
+	{
+		Id = "dockside",
+		DisplayName = "Dockside Core",
+		ClientId = "DocksideCooperative",
+		CargoId = "GeneratorCore",
+		DistrictId = "DocksideRing",
+		RouteId = "HeavyRoute",
+		Reward = 220,
+		TargetTime = 32,
+		OnTimeBonus = 30,
+		LatePenalty = 15,
+		UnlockAfterShifts = 0,
+		FinalNodeId = "DocksideRing_Delivery",
+		Availability = { Capacity = 1, FutureCapacity = 2, SharedReady = true }
+	},
+	{
+		Id = "brightline",
+		DisplayName = "Brightline Permit Sweep",
+		ClientId = "CivicCompliance",
+		CargoId = "PermitCase",
+		DistrictId = "BrightlineCivic",
+		RouteId = "PermitCorridor",
+		Reward = 260,
+		TargetTime = 38,
+		OnTimeBonus = 34,
+		LatePenalty = 14,
+		UnlockAfterShifts = 1,
+		PickupNodeId = "ServiceApron_Pickup",
+		HandoffNodeId = "ComplianceGate_Handoff",
+		FinalNodeId = "BrightlineCivic_Delivery",
+		Availability = { Capacity = 1, FutureCapacity = 3, SharedReady = true }
+	},
+	{
+		Id = "transit",
+		DisplayName = "Old Transit Relay",
+		ClientId = "NightMarketCollectors",
+		CargoId = "RelayCapsules",
+		DistrictId = "OldTransit",
+		RouteId = "TunnelCut",
+		Reward = 320,
+		TargetTime = 42,
+		OnTimeBonus = 42,
+		LatePenalty = 18,
+		UnlockAfterShifts = 2,
+		PickupNodeId = "RelayYard_Pickup",
+		HandoffNodeId = "NorthlineCrossdock_Handoff",
+		FinalNodeId = "OldTransit_Delivery",
+		Availability = { Capacity = 1, FutureCapacity = 4, SharedReady = true }
+	}
+}
+
+return Contracts

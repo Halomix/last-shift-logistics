@@ -8,4 +8,4 @@ export_presets.cfg
 *.log
 *.translation
 *.bak
-
+.codex/

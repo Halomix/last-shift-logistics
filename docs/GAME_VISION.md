@@ -40,5 +40,12 @@ The player should feel like:
 - each run creates a story worth remembering
 
 ## Production Intent
-Build a strong vertical slice first. Prove that the truck feels good, route choice matters, cargo creates pressure, and the city reacts visibly before scaling content.
+Build a strong Roblox-native vertical slice first. Prove that the contract loop, route choice, cargo pressure, and district consequence all read clearly in a shared depot-and-city structure before scaling content.
 
+The active runtime is now Roblox-native:
+- repeatable session loops
+- stronger return-value and progression
+- readable public progression and social/world presence
+- a shared central depot that feels alive even in solo play
+- fair monetization hooks through cosmetics and convenience, not power
+- multiplayer-safe scaffolding so co-op and convoy work can layer in later
